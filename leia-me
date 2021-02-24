@@ -1,0 +1,41 @@
+ng new my-app
+cd my-app
+ng serve
+
+obs:
+would you like to add Angular routing? Yes - add as rotas
+
+Which stylesheet format would you like to use? (Use arrow keys) -- define qual tipo de estilo
+❯ CSS
+  SCSS   [ http://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax ]
+  Sass   [ http://sass-lang.com/documentation/file.INDENTED_SYNTAX.html       ]
+  Less   [ http://lesscss.org                                                 ]
+  Stylus [ http://stylus-lang.com
+
+
+instalar angular ->
+ng add @angular/material
+obs: use as api para criar templates prontos >> https://material.angular.io/components
+
+? Choose a prebuilt theme name, or "custom" for a custom theme: (Use arrow keys)
+❯ Indigo/Pink        [ Preview: https://material.angular.io?theme=indigo-pink ]
+  Deep Purple/Amber  [ Preview: https://material.angular.io?theme=deeppurple-amber ]
+  Pink/Blue Grey     [ Preview: https://material.angular.io?theme=pink-bluegrey ]
+  Purple/Green       [ Preview: https://material.angular.io?theme=purple-green ]
+  Custom
+
+  ? Set up global Angular Material typography styles? (y/N) Y.
+  ? Set up browser animations for Angular Material? (Y/n)  Y.
+
+  gerando components
+  ng g c components/home
+  ng g c components/meeting-list
+  ng g c components/meeting-form
+  ng g c components/delete
+
+  gerando services
+  ng g s service/meeting
+
+  formatar datas
+  npm i moment
+  ng g pipe pipe/local-date-time
